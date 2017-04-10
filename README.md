@@ -1,4 +1,4 @@
-<p align="right"><img src="https://github.com/SolvingStorm/swim/blob/master/src/resources/shark-large2.png" width="300px" /></p>
+<img align="right" src="https://github.com/SolvingStorm/swim/blob/master/src/resources/shark-large2.png" width="300px" />
 
 # Swim
 
