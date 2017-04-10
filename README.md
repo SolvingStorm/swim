@@ -1,31 +1,22 @@
 # Swim
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
+Swim is an app for registering and viewing swimming times/records in an easy and clear way. 
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+There are no prerequisites, besides a device that is running a browser.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+## Built With
 
-## Build
+* [Angular 4.0](https://angular.io/) - The web framework used
+* [Bootstrap](https://ng-bootstrap.github.io/#/home) - Layout
+* [Chart.js](http://www.chartjs.org/) - Charting
+* [Font Awesome](http://fontawesome.io/) - iconic fonts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Authors
 
-## Running unit tests
+* **SolvingStorm** - *Initial work* - [Swim](https://github.com/SolvingStorm/swim)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
