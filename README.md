@@ -1,3 +1,5 @@
+<p style="align right"><img src="https://github.com/SolvingStorm/swim/blob/master/src/resources/shark-large2.png" /></p>
+
 # Swim
 
 Swim is an app for registering and viewing swimming times/records in an easy and clear way. 
