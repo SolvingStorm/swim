@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+.body-dark{
+    background-color: #1f1f1f !important;
+    color: #ffffff !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-light{
+    background-color: #e6e6e6 !important;
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-faded-dark {
+    background-color: #1a1a1a !important;
+}
+
+.bg-faded-light {
+    background-color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .open > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.open, .navbar-dark .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.swim-container-dark{
+    background-color: #1a1a1a;
+    margin: 10px 0 40px 0;
+    -webkit-box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75); /*Horizontal Length, Vertical Length, Blur Radius, Spread Radius, Shadow Color*/
+}
+
+.swim-container-light{
+    background-color: #ffffff;
+    margin: 10px 0 40px 0;
+    -webkit-box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75); /*Horizontal Length, Vertical Length, Blur Radius, Spread Radius, Shadow Color*/
+}
+
+.swim-content{
+    min-height: 400px;
+}
+
+.swim-profile-picture{
+    height: 80px !important;
+}
+
+.h6-dark{
+    color: #1b3c6d !important;
+}
+
+.h6-light{
+    color: #fdcaa5 !important;
+}
+
+.small-title-dark{
+    color: #f00;
+    font-size: 0.9rem;
+}
+
+.small-title-light{
+    color: #0f0;
+    font-size: 0.9rem;
+}
+
+.header-content-dark{
+    color: #1e82ff;
+    font-size: 1rem;
+}
+
+.header-content-light{
+    color: #fa8c0f;
+    font-size: 1rem;
+}

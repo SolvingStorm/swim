@@ -1,3 +1,44 @@
-<h1>
-  {{title}}
-</h1>
+  <nav class="navbar navbar-toggleable-md" [ngClass]="{'bg-faded-dark':isDark, 'bg-faded-light':!isDark, 'navbar-dark': isDark, 'navbar-light': !isDark}">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <a class="navbar-brand" routerLink="/"><img src="resources/shark-large2.png" height="25"></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" routerLink="/home"><span class="fa fa-home"></span> Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"  [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" routerLink="/programmas"><span class="fa fa-tasks"></span> Programma's</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" routerLink="/beheerz"><span class="fa fa-id-card-o"></span> Zwemmer beheer</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" routerLink="/beheerp"><span class="fa fa-list-alt"></span> Programma beheer</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" routerLink="/beheerg"><span class="fa fa-users"></span> Gebruiker beheer</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" (click)="changeTheme()">Thema</button>&nbsp;
+        <button class="btn btn-outline-danger my-2 my-sm-0">Uitloggen</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container" [ngClass]="{'swim-container-dark':isDark, 'swim-container-light': !isDark}">
+    <div class="row">
+      <div class="col-m-auto">
+        <img src="http://www.aspirehire.co.uk/aspirehire-co-uk/_img/profile.svg" class="swim-profile-picture"/>
+      </div>
+      <div class="col">
+        <h2>Swimmer 1 {{appel}}</h2>
+        <h6 [ngClass]="{'h6-dark':isDark, 'h6-light': !isDark}">13-12-2011</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container swim-content" [ngClass]="{'swim-container-dark':isDark, 'swim-container-light': !isDark}">
+    <router-outlet></router-outlet>
+  </div>
