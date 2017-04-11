@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ZwemmerbeheerComponent } from './zwemmerbeheer/zwemmerbeheer.component';
 import { ProgrammabeheerComponent } from './programmabeheer/programmabeheer.component';
 import { GebruikerbeheerComponent } from './gebruikerbeheer/gebruikerbeheer.component';
+import { ProfielComponent } from './profiel/profiel.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GebruikerbeheerComponent } from './gebruikerbeheer/gebruikerbeheer.comp
     HomeComponent,
     ZwemmerbeheerComponent,
     ProgrammabeheerComponent,
-    GebruikerbeheerComponent
+    GebruikerbeheerComponent,
+    ProfielComponent
   ],
   imports: [
     BrowserModule,

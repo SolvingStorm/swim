@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-toggleable-md" [ngClass]="{'bg-faded-dark':isDark, 'bg-faded-light':!isDark, 'navbar-dark': isDark, 'navbar-light': !isDark}">
+  <nav class="navbar navbar-toggleable-md navbar-dark bg-faded-dark">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars"></span>
     </button>
@@ -28,17 +28,11 @@
       </form>
     </div>
   </nav>
-  <div class="container" [ngClass]="{'swim-container-dark':isDark, 'swim-container-light': !isDark}">
-    <div class="row">
-      <div class="col-m-auto">
-        <img src="http://www.aspirehire.co.uk/aspirehire-co-uk/_img/profile.svg" class="swim-profile-picture"/>
-      </div>
-      <div class="col">
-        <h2>Swimmer 1 {{appel}}</h2>
-        <h6 [ngClass]="{'h6-dark':isDark, 'h6-light': !isDark}">13-12-2011</h6>
-      </div>
+  <div class="container">
+    <swimmer-profiel></swimmer-profiel>
+  
+    <div class="swim-content swim-container-dark">
+      <router-outlet></router-outlet>
+      <img src="./resources/knzb.jpg"/>
     </div>
-  </div>
-  <div class="container swim-content" [ngClass]="{'swim-container-dark':isDark, 'swim-container-light': !isDark}">
-    <router-outlet></router-outlet>
   </div>
