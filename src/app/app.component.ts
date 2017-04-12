@@ -10,10 +10,12 @@ import { CommonService } from './common.service';
 export class AppComponent {
   title = 'De app werkt 2';  
   isDark: boolean;
-  appel: boolean;
-  constructor(private commonService: CommonService){  }
+  appel: string;
+  constructor(private commonService: CommonService){  
+    
+  }
 
   ngOnInit(): void {
-      
+    this.appel = "resources/knzb.jpg";  
     }
 }
