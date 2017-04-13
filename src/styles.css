@@ -28,10 +28,11 @@
     -webkit-box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75);
     box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.75); /*Horizontal Length, Vertical Length, Blur Radius, Spread Radius, Shadow Color*/
+    padding:15px;
 }
 
 .swim-content{
-    min-height: 400px;
+    min-height: 400px;    
 }
 
 .swim-profile-picture{
@@ -50,4 +51,20 @@
 .header-content-dark{
     color: #1e82ff;
     font-size: 1rem;
+}
+
+.swim-link{
+    cursor: pointer;
+}
+
+.swim-link:hover{
+    color:#1e82ff;
+}
+
+.alt-row-color{
+    background-color: #252525;
+}
+
+.swim-row:hover{
+    background-color: #3e3e3e;
 }

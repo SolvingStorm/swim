@@ -1,20 +1,37 @@
-<div class="row">
-  <div class="col-12 col-sm-4">
-    <span class="small-title-dark">Programma</span><br>
-    <span class="header-content">100m Borstcrawl</span>
+<div>
+  <div class="row swim-row">
+    <div class="col-5">
+      <span class="small-title-dark">Programma</span>
+    </div>
+    <div class="col-3" align="right">
+      <span class="small-title-dark">Laatste tijd</span>
+    </div>
+    <div class="col-3" align="right">
+      <span class="small-title-dark">Beste tijd</span>
+    </div>
+    <div class="col-1">
+      
+    </div>
   </div>
-  <div class="col-6 col-sm-4">
-    <span class="small-title-dark">Laatste tijd</span><br>
-    <span class="header-content">0:55.78</span>
-  </div>
-  <div class="col-6 col-sm-4">
-    <span class="small-title-dark">Beste tijd</span><br>
-    <span class="header-content">0:54.60 {{isDark}}</span>
-  </div>
+
+  <!--<div template="ngFor let time of times;">
+    <p>{{time.ID}} - {{time.Description}}</p>
+  </div>-->
+
+  <ng-template ngFor let-time [ngForOf]="times" let-i="index">
+      <div class="row swim-row" [ngClass]="{'alt-row-color': i%2 == 1}">
+        <div class="col-5">
+          <span class="header-content">{{time.Program}}</span>
+        </div>
+        <div class="col-3" align="right">
+          <span class="header-content">{{time.Last}}</span>
+        </div>
+        <div class="col-3 col-auto" align="right">
+          <span class="header-content">{{time.Best}}</span>
+        </div>
+        <div class="col-1" align="right">
+          <i class="swim-link fa fa-trash-o" aria-hidden="true"></i>
+        </div>
+    </div>
+  </ng-template>
 </div>
-
-<div template="ngFor let time of times;">
-  <p>{{time.ID}} - {{time.Description}}</p>
-</div>
-
-

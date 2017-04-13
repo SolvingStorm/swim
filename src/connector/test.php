@@ -2,7 +2,12 @@
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json; charset=UTF-8");
 
-    $outp = '[{"ID": "1", "Description":"This is record number 1"},{"ID": "2", "Description":"This is record number 2"},{"ID": "3", "Description":"This is record number 3"},{"ID": "4", "Description":"This is record number 4"},{"ID": "5", "Description":"This is record number 5"},{"ID": "6", "Description":"This is record number 6"},{"ID": "7", "Description":"This is record number 7"},{"ID": "8", "Description":"This is record number 8"},{"ID": "9", "Description":"This is record number 9"},{"ID": "10", "Description":"This is record number 10"}]'; 
+    $outp = '[{"ID": "1", "Program":"100m Borstcrawl", "Last":"0:55.78", "Best":"0:54.66"},
+    {"ID": "1", "Program":"50m Borstcrawl", "Last":"0:35.52", "Best":"0:35.52"},
+    {"ID": "1", "Program":"100m Rugcrawl", "Last":"0:58.62", "Best":"0:58.60"},
+    {"ID": "1", "Program":"50m Rugcrawl", "Last":"0:36.87", "Best":"0:36.87"},
+    {"ID": "1", "Program":"100m Vlinder", "Last":"1:05.02", "Best":"0:59.24"},
+    {"ID": "1", "Program":"100m Wissel", "Last":"1:10.24", "Best":"1:05.14"}]'; 
 
     echo($outp);
 ?>
