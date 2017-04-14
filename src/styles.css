@@ -68,3 +68,7 @@
 .swim-row:hover{
     background-color: #3e3e3e;
 }
+
+.swim-hr{
+    border-top: 1px solid #eceeef;
+}

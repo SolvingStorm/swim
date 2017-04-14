@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../common.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-programmas',
@@ -10,17 +11,22 @@ import { CommonService } from '../common.service';
 export class ProgrammasComponent implements OnInit {
   times: string[]; 
   errorMessage: string;
+  programId: number;
+  hasProgramId: number; //-1 = nothing, 0 = overview, >0 = history
 
-  constructor(private commonService: CommonService) { }
+  constructor(private commonService: CommonService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    //debugger;
-    //this.commonService.getTimes(1); 
+    
+    this.programId = +this.route.snapshot.params['id'];// + converts string to number
+    this.hasProgramId = this.programId != null && !isNaN(this.programId) ? this.programId : 0;
 
-    this.commonService.getTimes(1)
+    if(!this.hasProgramId)
+    {
+      this.commonService.getTimes(1)
                    .subscribe(
                      times => this.times = times,
                      error =>  this.errorMessage = <any>error);
+    }
   }
-
 }

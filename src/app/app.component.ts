@@ -17,5 +17,5 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.appel = "resources/knzb.jpg";  
-    }
+  }
 }

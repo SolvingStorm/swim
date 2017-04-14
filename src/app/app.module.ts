@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ProgrammasComponent } from './programmas/programmas.component';
-import { HomeComponent } from './home/home.component';
 import { ZwemmerbeheerComponent } from './zwemmerbeheer/zwemmerbeheer.component';
 import { ProgrammabeheerComponent } from './programmabeheer/programmabeheer.component';
 import { GebruikerbeheerComponent } from './gebruikerbeheer/gebruikerbeheer.component';
@@ -16,7 +15,6 @@ import { ProfielComponent } from './profiel/profiel.component';
   declarations: [
     AppComponent,
     ProgrammasComponent,
-    HomeComponent,
     ZwemmerbeheerComponent,
     ProgrammabeheerComponent,
     GebruikerbeheerComponent,
@@ -29,6 +27,10 @@ import { ProfielComponent } from './profiel/profiel.component';
     RouterModule.forRoot([      
       {
         path: 'programmas',
+        component: ProgrammasComponent
+      },
+      {
+        path: 'programmas/:id',
         component: ProgrammasComponent
       },
       {
@@ -46,11 +48,11 @@ import { ProfielComponent } from './profiel/profiel.component';
       {
         path: '',
         redirectTo: '/programmas',
-        pathMatch: 'full'
+        pathMatch: 'full',
       },
       {
         path: '**',
-        component: HomeComponent
+        component: ProgrammasComponent
       }
     ])
   ],
