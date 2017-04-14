@@ -14,6 +14,7 @@ There are no prerequisites, besides a device that is running a browser.
 * [Bootstrap](https://ng-bootstrap.github.io/#/home) - Layout
 * [Chart.js](http://www.chartjs.org/) - Charting
 * [Font Awesome](http://fontawesome.io/) - iconic fonts
+* [Moment.js](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times
 
 ## Authors
 
